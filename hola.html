@@ -9,24 +9,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Testing Page</title>
-
+<script type="text/javascript">
+function change() {
+document.body.style.cursor="url('yo.png'), default";
+document.documentElement.style.cursor="url('yo.png'), default";
+}
+</script>
 </head>
 
 <body>
+
     <style> 
         body {
           background-image: url("blackbanana.png");
           background-color: #cccccc;
           background-position: right;
           background-size:contain;
-        }
-        </style>
+              }
+    </style>
 
-<h1 style="color: black; font-family: Impact; backdrop-filter: invert(80%) ; text-align: center;" >Here is your .txt file</h1>
+<h1 style="color: black; font-family: Impact; backdrop-filter: invert(80%) ; text-align: center;"> Here is your .txt file</h1>
 
-<embed style="border: 4px outset black; " src="C:\Users\matia\Desktop\hello.txt" type="text/plain" width="500" height="500" >
+<embed style="border: 4px outset black;" src="C:\Users\matia\Desktop\hello.txt" type="text/plain" width="500" height="500" >
 
 </body>
-
+<div style="position: absolute; bottom: 0; left: 0; color: darkgrey;" onclick="change()"> clickme! </div>
 </html>
 
