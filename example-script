@@ -1,0 +1,12 @@
+#!/bin/bash
+
+msg='cachengue'
+
+echo '<body><style>body {background-color: black;}</style>' > ref.html
+echo '<h1 style="color: grey; font-family: Impact; backdrop-filter: invert(80%) ; text-align: center;">' $msg '</h1>' >> ref.html
+echo '<h2 style="color: grey; font-family: Impact;">HOLA</h2>'  >> ref.html
+echo '<h2 style="color: grey; font-family: Impact;">'$msg'</h2>' >> ref.html
+echo '<h2 style="color: grey; font-family: Impact;">HOLA</h2>' >> ref.html
+echo '<a style="color: green; font-family: monospace;" href="https://google.com.ar/" target="_blank">el Google</a>'  >> ref.html
+echo '<h2 style="color: grey; font-family: Impact;">'$msg'</h2>'  >> ref.html
+echo '</body>'  >> ref.html
