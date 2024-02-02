@@ -27,14 +27,34 @@ document.documentElement.style.cursor="url('yo.png'), default";
           background-color: #cccccc;
           background-position: right;
           background-size:contain;
-              }
+            }
+        .container {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            backdrop-filter: invert(15%);
+            width: 1000px
+            }
+        .text {
+            font-size: 20px;
+            padding-left: 20px;
+            float: right;
+            font-family: monospace;
+            }
     </style>
 
 <h1 style="color: black; font-family: Impact; backdrop-filter: invert(80%) ; text-align: center;"> Output from file</h1>
 
 <!-- <embed style="border: 4px outset black;" src="C:\Users\matia\Desktop\hello.txt" type="text/plain" width="500" height="500" > -->
-
-    <iframe src="C:\Users\matia\Desktop\hello.html" title="OhGod" width="500" height="500"></iframe>
+<div class="container">
+<iframe style="float: left;" src="C:\Users\matia\Desktop\hello.html" width="500" height="500"></iframe>
+<div class="text">
+<h3>First Info data blah!</h3>
+<h3>Second Info data blah!</h3>
+<h3>Third Info data blah!</h3>
+<h3>Forth Info data blah!</h3>
+</div>
+</div>
 
 </body>
 <div style="position: absolute; bottom: 0; left: 0; color: darkgrey;" onclick="change()"> clickme! </div>
